@@ -111,4 +111,5 @@ _Unwind_Resume@@GCC_3.0
 ```
 
 Now the specific part of the string that looks suspicious to us is
-![](https://github.com/Immobility/CTF/tree/master/tamuctf-2019/images)
+
+![](CTF/tamuctf-2019/images/reversing.png)
