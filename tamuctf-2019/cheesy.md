@@ -110,6 +110,12 @@ _Unwind_Resume@@GCC_3.0
 .comment
 ```
 
-Now the specific part of the string that looks suspicious to us is
+Now the specific part of the string that looks suspicious to us is:
 
 ![](https://github.com/Immobility/CTF/blob/master/tamuctf-2019/images/reversing.png)
+
+This specifically tells us that it used something encrypt the message, by looking at this, it looks pretty close to base64 so after we decode in an online decoder, we see:
+
+![](https://github.com/Immobility/CTF/blob/master/tamuctf-2019/images/reversing2.png)
+
+Seems like a bit of the decryption got a mixed up, so lets remove the parts that have been decrypted, then only ```Z2lnZW17M2E1eV9SM3YzcjUxTjYhfQ==``` should be left, by decrypting we get ```gigem{3a5y_R3v3r51N6!}```!
