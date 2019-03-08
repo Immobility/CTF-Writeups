@@ -111,4 +111,4 @@ _Unwind_Resume@@GCC_3.0
 ```
 
 Now the specific part of the string that looks suspicious to us is
-![](/images/reversing.png)
+![](images/reversing.png)
