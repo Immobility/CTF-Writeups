@@ -1,4 +1,4 @@
-Source
+Source pt1
 --------------
 Never had any experience with pwn without having a binary file (Also my first successful pwn challenge), however, I figured it worked out the same way as most binary exploitation did.
 When we write a couple of passwords to the file, it always seem to show "Pass auth failed.", and close out of the shell.
@@ -66,6 +66,22 @@ Ooh!, so our flag is ```WPI{What_do_you_mean_I_SEE_AHH_SKI}```
 -------------
 
 jocipher
-_____________
+-------------
 
-After gettubg the required file, that shows ...
+After getting the required file, we were supposed to decrypt ```PIY{zsxh-sqrvufwh-nfgl}``` to supposedly get out flag. I wrote a small bash script to retrieve the flag.
+
+```
+# !/bin/bash
+
+for i in {1..100}
+do
+        ./jocipher.pyc --string "PIY{zsxh-sqrvufwh-nfgl}" --shift $i --decode | grep WPI
+done
+```
+
+``` ./jocipher.pyc --string "PIY{zsxh-sqrvufwh-nfgl}" --shift 48 --decode```
+
+Where our reasonable output is ```WPI{xkcd-keyboard-mash}```
+
+------------
+
