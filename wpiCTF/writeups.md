@@ -55,10 +55,10 @@ Thus, our flag is ``` WPI{Typos_are_GrEaT!} ```
 
 -------------
 
-Reverse
+strings
 -------------
 
-When executing the program, it worked the same way as the ```strings``` command would do. But what if we strings the file?
+When executing the program, it worked the same way as the ```strings``` command would do. But what if we strings the file? So I tried to take a look at the file's functions.
 ![](https://raw.githubusercontent.com/Immobility/CTF/master/wpiCTF/photos/Screenshot%20at%202019-04-16%2015-23-47.png)
 
 Ooh!, so our flag is ```WPI{What_do_you_mean_I_SEE_AHH_SKI}```
