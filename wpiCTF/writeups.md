@@ -55,7 +55,7 @@ Thus, our flag is ``` WPI{Typos_are_GrEaT!} ```
 
 -------------
 
-strings
+Strings
 -------------
 
 When executing the program, it worked the same way as the ```strings``` command would do. But what if we strings the file? So I tried to take a look at the file's functions.
@@ -65,7 +65,7 @@ Ooh!, so our flag is ```WPI{What_do_you_mean_I_SEE_AHH_SKI}```
 
 -------------
 
-jocipher
+Jocipher
 -------------
 
 After getting the required file, we were supposed to decrypt ```PIY{zsxh-sqrvufwh-nfgl}``` to supposedly get out flag. I wrote a small bash script to retrieve the flag.
@@ -82,6 +82,27 @@ done
 ``` ./jocipher.pyc --string "PIY{zsxh-sqrvufwh-nfgl}" --shift 48 --decode```
 
 Where our reasonable output is ```WPI{xkcd-keyboard-mash}```
+
+------------
+
+Webinspect
+------------
+
+WIP
+
+------------
+
+Chirp
+------------
+
+WIP
+
+------------
+
+Getaflag
+------------
+
+WIP
 
 ------------
 
