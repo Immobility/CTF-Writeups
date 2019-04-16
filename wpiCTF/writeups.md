@@ -1,7 +1,7 @@
 Source
 --------------
 Never had any experience with pwn without having a binary file (Also my first successful pwn challenge), however, I figured it worked out the same way as most binary exploitation did.
-When we spam at first when writing a couple of passwords to the file, it always seem to show 
+When we write a couple of passwords to the file, it always seem to show "Pass auth failed.", and close out of the shell.
 ![](https://raw.githubusercontent.com/Immobility/CTF/master/wpiCTF/photos/Screenshot%20at%202019-04-16%2015-05-45.png)
 
 However, when we type spam more characters, such as:
@@ -52,3 +52,20 @@ int main(void){
 }
 ```
 Thus, our flag is ``` WPI{Typos_are_GrEaT!} ```
+
+-------------
+
+Reverse
+-------------
+
+When executing the program, it worked the same way as the ```strings``` command would do. But what if we strings the file?
+![](https://raw.githubusercontent.com/Immobility/CTF/master/wpiCTF/photos/Screenshot%20at%202019-04-16%2015-23-47.png)
+
+Ooh!, so our flag is ```WPI{What_do_you_mean_I_SEE_AHH_SKI}```
+
+-------------
+
+jocipher
+_____________
+
+After gettubg the required file, that shows ...
