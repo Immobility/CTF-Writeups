@@ -1,6 +1,7 @@
 Source pt1
 --------------
 ```
+Challenge:
 ssh source@source.wpictf.xyz -p 31337 (or 31338 or 31339). Password is sourcelocker
 
 Here is your babybuff.
@@ -64,6 +65,7 @@ Thus, our flag is ``` WPI{Typos_are_GrEaT!} ```
 Strings
 -------------
 ```
+Challenge:
 A handy tool for your RE efforts!
 
     made by AWG
@@ -81,6 +83,7 @@ Ooh!, so our flag is ```WPI{What_do_you_mean_I_SEE_AHH_SKI}```
 Jocipher
 -------------
 ```
+Challenge:
 Decrypt PIY{zsxh-sqrvufwh-nfgl} to get the flag!
 
 made by Samantha Comeau
@@ -108,6 +111,7 @@ Where our reasonable output is ```WPI{xkcd-keyboard-mash}```
 Webinspect
 ------------
 ```
+Challenge:
 Something is lurking at https://www.wpictf.xyz
 ```
 
@@ -121,6 +125,7 @@ They redirect you to the site. where if you open up the source code, you'll find
 Getaflag
 ------------
 ```
+Challenge:
 Come on down and get your flag, all you have to do is enter the correct password ...
 
 http://getaflag.wpictf.xyz:31337/ (or 31338 or 31339)
@@ -162,6 +167,7 @@ However, you get rick roll'd after seeing clicking on the link, so when I inspec
 Chirp
 ------------
 ```
+Challenge:
 made by Justo and siege
 
 file from https://drive.google.com/open?id=1lcdC9qVBKtSfxOPWLbWd8kAYnPEoSZQb
