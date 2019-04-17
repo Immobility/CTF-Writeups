@@ -98,7 +98,35 @@ They redirect you to the site. where if you open up the source code, you'll find
 Getaflag
 ------------
 
+The site starts with 
+![](https://raw.githubusercontent.com/Immobility/CTF/master/wpiCTF/photos/Screenshot%20at%202019-04-16%2023-10-39.png)
 
+I started with some simple SQL injections such as ``` ' OR 1=1-- ``` or ``` ' OR 1=1# ```, but I didn't get anything out of that. However, after I inspected the source code, on the comments, it showed ```  SGV5IEdvdXRoYW0sIGRvbid0IGZvcmdldCB0byBibG9jayAvYXV0aC5waHAgYWZ0ZXIgeW91IHVwbG9hZCB0aGlzIGNoYWxsZW5nZSA7KQ== ```, which in base64, translates to
+``` Hey Goutham, don't forget to block /auth.php after you upload this challenge ;) ```, aha! so when I went to http://getaflag.wpictf.xyz:31337/auth.php it gave me this psudocode
+```
+
+      // Pseudocode
+      $passcode = '???';
+      $flag = '????'
+
+      extract($_GET);
+      if (($input is detected)) {
+        if ($input === get_contents($passcode)) {
+          return $flag
+        } else {
+          echo "Invalid ... Please try again!"
+        }
+      }
+```
+
+Because I didn't know to much about PHP, but after reading some functions, I [stumbled](https://stackoverflow.com/questions/829407/what-is-so-wrong-with-extract) on how the extract function is very vulnerable due to how it can replace an element in an array. So after experimenting and having a small knowledge of address object exploits, I came up to an idea since ```$input === get_contents($passcode)```, and the address bar shows the query, I changed input to a null value and also wrote a passcode = null, resulting in 
+```http://getaflag.wpictf.xyz:31337/?input=&passcode=null```. and our result should have given us 
+
+![](https://raw.githubusercontent.com/Immobility/CTF/master/wpiCTF/photos/Screenshot%20at%202019-04-16%2023-31-16.png)
+
+However, you get rick roll'd after seeing clicking on the link, so when I inspected the source code again, it gave me the flag!
+
+```WPI{1_l0v3_PHP}```
 
 ------------
 Chirp
