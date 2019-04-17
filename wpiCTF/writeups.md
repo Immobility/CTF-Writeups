@@ -88,10 +88,19 @@ Where our reasonable output is ```WPI{xkcd-keyboard-mash}```
 Webinspect
 ------------
 
-WIP
+They redirect you to the site. where if you open up the source code, you'll find
+![](https://github.com/Immobility/CTF/blob/master/wpiCTF/photos/7e0251fa47ee79d28850a4a150bf3bbf.png?raw=true)
+
+``` WPI{Inspect0r_Gadget} ```
 
 ------------
 
+Getaflag
+------------
+
+
+
+------------
 Chirp
 ------------
 
@@ -99,10 +108,5 @@ WIP
 
 ------------
 
-Getaflag
-------------
 
-WIP
-
-------------
 
