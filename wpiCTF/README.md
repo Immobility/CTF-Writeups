@@ -1,5 +1,11 @@
 Source pt1
 --------------
+```
+ssh source@source.wpictf.xyz -p 31337 (or 31338 or 31339). Password is sourcelocker
+
+Here is your babybuff.
+```
+
 Never had any experience with pwn without having a binary file (Also my first successful pwn challenge), however, I figured it worked out the same way as most binary exploitation did.
 When we write a couple of passwords to the file, it always seem to show "Pass auth failed.", and close out of the shell.
 ![](https://raw.githubusercontent.com/Immobility/CTF/master/wpiCTF/photos/Screenshot%20at%202019-04-16%2015-05-45.png)
@@ -57,6 +63,13 @@ Thus, our flag is ``` WPI{Typos_are_GrEaT!} ```
 
 Strings
 -------------
+```
+A handy tool for your RE efforts!
+
+    made by AWG
+
+File from https://drive.google.com/open?id=1Hr30UBpwKEbt5UF4w2GzfXnVDXoCRVIs
+```
 
 When executing the program, it worked the same way as the ```strings``` command would do. But what if we strings the file? So I tried to take a look at the file's functions.
 ![](https://raw.githubusercontent.com/Immobility/CTF/master/wpiCTF/photos/Screenshot%20at%202019-04-16%2015-23-47.png)
@@ -67,6 +80,13 @@ Ooh!, so our flag is ```WPI{What_do_you_mean_I_SEE_AHH_SKI}```
 
 Jocipher
 -------------
+```
+Decrypt PIY{zsxh-sqrvufwh-nfgl} to get the flag!
+
+made by Samantha Comeau
+
+https://drive.google.com/open?id=1MKcNvHuFCo8vsHZgKOOT0vWddfIzRFk1
+```
 
 After getting the required file, we were supposed to decrypt ```PIY{zsxh-sqrvufwh-nfgl}``` to supposedly get out flag. I wrote a small bash script to retrieve the flag.
 
@@ -87,6 +107,9 @@ Where our reasonable output is ```WPI{xkcd-keyboard-mash}```
 
 Webinspect
 ------------
+```
+Something is lurking at https://www.wpictf.xyz
+```
 
 They redirect you to the site. where if you open up the source code, you'll find
 ![](https://github.com/Immobility/CTF/blob/master/wpiCTF/photos/7e0251fa47ee79d28850a4a150bf3bbf.png?raw=true)
@@ -97,6 +120,13 @@ They redirect you to the site. where if you open up the source code, you'll find
 
 Getaflag
 ------------
+```
+Come on down and get your flag, all you have to do is enter the correct password ...
+
+http://getaflag.wpictf.xyz:31337/ (or 31338 or 31339)
+
+made by godeva
+```
 
 The site starts with 
 ![](https://raw.githubusercontent.com/Immobility/CTF/master/wpiCTF/photos/Screenshot%20at%202019-04-16%2023-10-39.png)
@@ -131,6 +161,11 @@ However, you get rick roll'd after seeing clicking on the link, so when I inspec
 ------------
 Chirp
 ------------
+```
+made by Justo and siege
+
+file from https://drive.google.com/open?id=1lcdC9qVBKtSfxOPWLbWd8kAYnPEoSZQb
+```
 
 For this challenge, you had to look at a photo of this bird
 
