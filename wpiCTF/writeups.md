@@ -104,7 +104,13 @@ Getaflag
 Chirp
 ------------
 
-WIP
+For this challenge, you had to look at a photo of this bird
+
+![](https://raw.githubusercontent.com/Immobility/CTF/master/wpiCTF/photos/chal.jpg)
+
+At first, I thought it was steganography, but I later realized that recon was not supposed to be a steg challenge. So after connecting the title of the challenge and the picture of the bird, I found that the image is depicting an image of Twitter. I went to the sponsor's Twitter page and got the flag.
+
+``` WPI{sp0nsored_by_si3ge} ```
 
 ------------
 
