@@ -16,7 +16,7 @@ However, when we type spam more characters, such as:
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 ```
 
-The only output seems to be "Connection to source.wpictf.xyz closed." So that seemed suspicious, which felt like an overflow error, which shouldn't be too possible if the program is secure.
+The only output seems to be "Connection to source.wpictf.xyz closed." So that seemed suspicious because we want a ``` Pasword auth failed ```, which felt like an overflow error, which shouldn't be too possible if the program is secure.
 So I decided to brute-force my way in by determining the right amount of ```A```'s I should be writing until I make my way in, which were 111 A's, or 
 ```
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
