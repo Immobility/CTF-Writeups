@@ -29,7 +29,7 @@ We can decode this by writing ```eval(f=>atob([...atob(f)].map(s=>String.fromCha
 which gives us
 ```"flag{tHe_H1gh3st_quA11ty_antI_d3buG}"```
 
-Generic Crack Me
+Generic Crackme
 ------------
 Right as we launch IDA, we get into 
 
@@ -50,3 +50,28 @@ It seems that theres a sub_1159 function right before the cmp instruction was us
 After analysing what sub_1159 does, we can conclude that it adds 1 byte to whatever the input was. And since each cmp instruction is comparing each letter by letter in ```rax``` (which is our input), we can assume this works as a caesar cipher and rotate 1 from our input to get ```ephhz```, which our input should be ```doggy```, so our flag should be 
 
 ```flag{doggy}```.
+
+Generic Crackme Redux
+---------------
+This part is generic math (haha). By opening IDA, we see
+
+![](https://github.com/Immobility/CTF-Writeups/blob/master/redpwnCTF-2019/photos/gcmr1.png)
+
+Which shows us the disassembly for the main function. We get straight into the sub_5645DEB32169 function, where we see
+
+![](https://github.com/Immobility/CTF-Writeups/blob/master/redpwnCTF-2019/photos/gcmr2.png)
+
+We have to compare our output 0AC292h, which is 705170 in decimal. So lets break the function down. From the start, 
+
+```Lets call edx as x.
+mov eax, edx means x = x, so both eax and edx have values of x.
+shl eax, 2 means shift eax bits by 2, psudo-meaning multiply eax by 4. So eax = 4x.
+add eax, edx means add edx to eax. So eax = 5x
+add eax, eax means add eax to eax, or eax * 2. eax =  10x
+cmp eax, 0AC292h compares value of eax to 0AC292h
+```
+Now after static analysizing these sets of functions manually, after we calculate eax, we get a decimal value of 70517, which is the correct answer!
+
+![](https://github.com/Immobility/CTF-Writeups/blob/master/redpwnCTF-2019/photos/gcmr3.png)
+
+So our correct answer is ```flag{70517}```
