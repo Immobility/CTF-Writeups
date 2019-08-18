@@ -6,7 +6,7 @@ Written by: blevy
 nc chall2.2019.redpwn.net 4001
 ```
 
-Since the chalenge is an introductory overflow challenge, the most basic type of pwn is buffer overflow, therefore spamming letters in the console will automatically update the printout and print out the flag.
+Since the chalenge is an introductory overflow challenge, the most basic type of pwn is buffer overflow, therefore spamming letters such as "aaaaaaaaaaaaaaaaaa" in the console will automatically update the printout and print out the flag.
 
 Crypt
 ------------------
