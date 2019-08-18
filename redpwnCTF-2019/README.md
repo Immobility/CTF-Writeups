@@ -31,6 +31,12 @@ which gives us
 
 Generic Crackme
 ------------
+```
+Written by: blevy
+
+Note: Enclose the flag with flag{}.
+```
+
 Right as we launch IDA, we get into 
 
 ![](https://github.com/Immobility/CTF-Writeups/blob/master/redpwnCTF-2019/photos/gcm1.png)
@@ -53,6 +59,12 @@ After analysing what sub_1159 does, we can conclude that it adds 1 byte to whate
 
 Generic Crackme Redux
 ---------------
+```
+Written by: blevy
+
+Note: Enclose the flag with flag{}.
+```
+
 This part is generic math (haha). By opening IDA, we see
 
 ![](https://github.com/Immobility/CTF-Writeups/blob/master/redpwnCTF-2019/photos/gcmr1.png)
@@ -75,3 +87,27 @@ Now after static analysizing these sets of functions manually, after we calculat
 ![](https://github.com/Immobility/CTF-Writeups/blob/master/redpwnCTF-2019/photos/gcmr3.png)
 
 So our correct answer is ```flag{70517}```
+
+MSB
+---------
+```
+Written by: NotDeGhost
+
+It's not LSB, its MSB!
+
+Red is Random, Green is Garbage, Blue is Boring.
+
+Hint: Only one channel is correct. Also, I like doing things top down.
+```
+
+The challenge gives us a picture and gives some hints that data is hidden by MSB. This gives us the chance to use ```stegsolve```. When opening the picture with stegsolve, we get a picture.
+
+![](https://github.com/Immobility/CTF-Writeups/blob/master/redpwnCTF-2019/photos/msb1.png)
+
+By going through the color planes, we see an output that doesnt really feel the same like the others, there I data extracted by column and got the flag!
+
+![](https://github.com/Immobility/CTF-Writeups/blob/master/redpwnCTF-2019/photos/msb2.png)
+
+![](https://github.com/Immobility/CTF-Writeups/blob/master/redpwnCTF-2019/photos/msb3.png)
+
+```flag{MSB_really_sucks}```
