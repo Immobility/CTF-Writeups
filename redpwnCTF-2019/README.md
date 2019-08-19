@@ -77,7 +77,8 @@ Which shows us the disassembly for the main function. We get straight into the s
 
 We have to compare our output 0AC292h, which is 705170 in decimal. So lets break the function down. From the start, 
 
-```Lets call edx as x.
+```
+Lets call edx as x.
 mov eax, edx means x = x, so both eax and edx have values of x.
 shl eax, 2 means shift eax bits by 2, psudo-meaning multiply eax by 4. So eax = 4x.
 add eax, edx means add edx to eax. So eax = 5x
