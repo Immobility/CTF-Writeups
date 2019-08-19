@@ -24,7 +24,9 @@ By going to Inspector and checking the code, the algorithm is enclosed by JSFuck
 f=>btoa([...btoa(f)].map(s=>String.fromCharCode(s.charCodeAt(0)+(location.host.charCodeAt(0)%location.host.charCodeAt(3)))).join(''))
 ```
 
-We can reverse this encryption by writing ```eval(f=>atob([...atob(f)].map(s=>String.fromCharCode(s.charCodeAt(0)-(location.host.charCodeAt(0)%location.host.charCodeAt(3)))).join('')))('vdDby72W15O2qrnJtqep0cSnsd3HqZzbx7io27C7tZi7lanYx6jPyb2nsczHuMec')```
+We can reverse this encryption by writing 
+
+```eval(f=>atob([...atob(f)].map(s=>String.fromCharCode(s.charCodeAt(0)-(location.host.charCodeAt(0)%location.host.charCodeAt(3)))).join('')))('vdDby72W15O2qrnJtqep0cSnsd3HqZzbx7io27C7tZi7lanYx6jPyb2nsczHuMec')```
 
 which gives us
 ```flag{tHe_H1gh3st_quA11ty_antI_d3buG}```
