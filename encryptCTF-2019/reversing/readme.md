@@ -9,4 +9,4 @@ by analyzing the if else statements, we would want to get to the end because the
 ![](https://github.com/Immobility/CTF-Writeups/blob/master/encryptCTF-2019/reversing/crackme01/pics/crackme01.3.png)
 To solve this, we follow our leap statements and find out the answer is
 
-``encryptCTF{gdb_or_r2?}```
+```encryptCTF{gdb_or_r2?}```
