@@ -1,7 +1,10 @@
 After the ```puts function``` in process 4440, the process moves on to the ```get_password``` and the ```check_password``` functions, we're interested in the ```check_password``` function. 
-!
+![](https://raw.githubusercontent.com/Immobility/CTF-Writeups/master/Embedded-Security-CTF/Tutorial/t1.1.png)
+
+
 To do this, we analyze the ```check_password``` function and see
 
+![](https://raw.githubusercontent.com/Immobility/CTF-Writeups/master/Embedded-Security-CTF/Tutorial/t1.2.png)
 
 ```
 mov.b @r15, r14 <--- saves r14 register byte value to r15
@@ -19,3 +22,4 @@ So any value of password should work, such as, "aaaaaaaa" or "testtest" or "!@!@
 
 And the door opens!
 
+![](https://raw.githubusercontent.com/Immobility/CTF-Writeups/master/Embedded-Security-CTF/Tutorial/t1.3.png)
