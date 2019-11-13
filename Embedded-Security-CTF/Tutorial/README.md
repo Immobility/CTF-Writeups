@@ -7,7 +7,7 @@ To do this, we analyze the ```check_password``` function and see
 ![](https://raw.githubusercontent.com/Immobility/CTF-Writeups/master/Embedded-Security-CTF/Tutorial/t1.2.png)
 
 ```
-mov.b @r15, r14 <--- saves r14 register byte value to r15
+mov.b @r15, r14 <--- saves r15 register byte value to r14
 inc r15 <--- increments value of r15
 inc r12 <--- increments r12 (Original value is 0 in the register)
 test r14 <--- resets CF & ZF to 0
