@@ -18,3 +18,6 @@ After analyzing the input, we come to a conclusion that the input is, in fact, n
 
 
 Our answer: ```B1yi^le^```
+
+![](https://github.com/Immobility/CTF-Writeups/blob/master/Embedded-Security-CTF/Sydney/t3.4.png)
+
