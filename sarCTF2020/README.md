@@ -1,4 +1,4 @@
-First public CTF in 2020! 85th place, not bad!
+First public CTF in 2020! 85th place, not bad, A good start to the year!
 
 # Forensics
 
