@@ -59,7 +59,7 @@ Intersting, looks like there is a function inside the function since it calls. L
 ```Func _Z1aPc```
 ![](https://github.com/Immobility/CTF-Writeups/blob/master/sarCTF2020/images/cross3.6.png)
 
-So we start in ```_Z1ePc```, let's get the values that we need:
+So we start in *```_Z1ePc```*, let's get the values that we need:
 
 add rax, 7
 cmp     al, 35h ; '5'
@@ -70,7 +70,8 @@ cmp     al, 67h ; 'g'
 add rax, 2
 cmp     al, 41h ; 'A'
 
-```_Z1bPc```
+*```_Z1bPc```*
+
 add rax, 0Fh
 cmp     al, 69h ; 'i'
 
@@ -80,7 +81,8 @@ cmp     al, 72h ; 'r'
 add rax, 1
 cmp     al, 4Ch ; 'L'
 
-```_Z1dPc```
+*```_Z1dPc```*
+
 add rax, 0Ah
 cmp     al, 33h ; '3'
 
@@ -90,7 +92,8 @@ cmp     al, 7Dh ; '}'
 add rax, 6
 cmp     al, 61h ; 'a'
 
-```_Z1fPc```
+*```_Z1fPc```*
+
 cmp     al, 46h ; 'F'
 
 add rax, 0Eh
@@ -99,7 +102,8 @@ cmp     al, 35h ; '5'
 add rax, 10h
 cmp     al, 6Eh ; 'n'
 
-```_Z1cPc```
+*```_Z1cPc```*
+
 add rax, 3
 cmp     al, 47h ; 'G'
 
@@ -109,7 +113,8 @@ cmp     al, 76h ; 'v'
 add rax, 5
 cmp     al, 33h ; '3'
 
-```_Z1aPc```
+*```_Z1aPc```*
+
 add rax, 4
 cmp     al, 7Bh ; '{'
 
