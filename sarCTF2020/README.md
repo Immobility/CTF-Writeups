@@ -195,3 +195,20 @@ There we go! Our prompt answers and the flag pieces!
 ```
 
 ```FLAG{08c49c3d9ae88983437729747bcf1be8}```
+
+# Crypto
+
+Invitation
+-----
+```Prompt: Sherlock doesn't like going to parties. But this time an invitation came to him, which he could not refuse.```
+
+A dancing men puzzle!
+![](https://github.com/Immobility/CTF-Writeups/blob/master/sarCTF2020/images/task_3e55f673c10d-1.png)
+All we need to do here is to look for the signs that look like: 
+![](https://raw.githubusercontent.com/Immobility/CTF-Writeups/master/sarCTF2020/images/dancing1.png)
+
+The flag starts from the right side: 
+![](https://raw.githubusercontent.com/Immobility/CTF-Writeups/master/sarCTF2020/images/dancing2.png)
+
+Which translates to:
+flag{discoinSaratov}. But this didn't work, so we formatted to ```flag{disco_in_Saratov}```
