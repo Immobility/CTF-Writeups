@@ -60,6 +60,7 @@ Intersting, looks like there is a function inside the function since it calls. L
 ![](https://github.com/Immobility/CTF-Writeups/blob/master/sarCTF2020/images/cross3.6.png)
 
 So we start in ```_Z1ePc```, let's get the values that we need:
+
 add rax, 7
 cmp     al, 35h ; '5'
 
