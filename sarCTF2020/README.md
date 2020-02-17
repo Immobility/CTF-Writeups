@@ -1,5 +1,7 @@
 First public CTF in 2020! 85th place, not bad, A good start to the year!
 
+Note: The flags for this CTF is case-insensitive
+
 # Forensics
 
 Doc. Holmes
