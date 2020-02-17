@@ -217,7 +217,7 @@ flag{discoinSaratov}. But this didn't work, so we formatted to ```flag{disco_in_
 
 Mind palace I
 -----
-
+I should get back to practicing scripting.
 ```Prompt: It looks like the situation is hopeless, there is no time to think. However, you can use the mind palace and solve all problems instantly.
 
 nc 212.47.229.1 33001
@@ -226,4 +226,5 @@ This was at first tricky, since I thought that it had to do with Python pacakges
 
 I logged the results by writing ```nc 212.47.229.1 33001 > res.log```, then using vim, by first writing: ```%s/pip/./g``` then ```%s/piiiip/-/g```. Then I removed the ^M s, then decoded the input by removing the spaces first, then finding for similar morse that looked like ```..-. .-.. .- --.``` then went on from there. It turns out around 3 sentences from the Adventure of the Empty House chapter from Return of Sherlock Holmes. 
 ```..-. .-.. .- --. ... .... . .-. .-.. --- -.-. -.- .-.. .. -.- . ... -.-- --- ..- .-. -- --- .-. ... . ```
+
 ```flag{sherlocklikesyourmorse}```
