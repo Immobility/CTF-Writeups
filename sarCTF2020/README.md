@@ -145,10 +145,14 @@ True Detective
 -----
 ```Prompt: And now it's time to show the skills of a real detective! https://clck.ru/MCop6```
 We need to figure out where the each place is. However, there's a small trick I discovered. First, go to the developer tools on the browser you're using and take a look at the debugger menu on the google docs and look at the viewform. 
-![]()
+![](https://raw.githubusercontent.com/Immobility/CTF-Writeups/master/sarCTF2020/images/truedet1.png)
 
 Next, go all the way to the bottom as that's where the form stores the warnings.
+
+![](https://raw.githubusercontent.com/Immobility/CTF-Writeups/master/sarCTF2020/images/truedet2.png)
+
 There we go! Our prompt answers and the flag pieces!
+
 
 ```
 ,"1 - FLAG{08"]
