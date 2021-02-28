@@ -6,3 +6,5 @@ It's been a while since I uploaded my last CTF problems, yes, I've been working 
 Meanwhile, check the pwn challenges here! 
 
 https://exploit.education/phoenix/stack-zero/
+
+Note that the solutions are for Python 3
